@@ -1,0 +1,250 @@
+
+/*   *********************     font    **********************  */
+
+@font-face {
+    font-family: IRANSans;
+    src: url('../fonts/IRANSans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    padding:0;
+    margin:0;
+    list-style:none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: IRANSans;
+    background-color: #f2f2f2;
+    font-weight: 400;
+    direction: rtl;
+    text-align: right;
+}
+a {
+    text-decoration: none;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+p{
+    color:black;
+    text-align: center;
+}
+
+.container-fluid{
+    background-color: white;
+}
+
+.container {
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+}
+
+.list-social{
+    display: flex;
+    width: 20%;
+    padding: 7.5px 7.5px 4px 4px;
+}
+
+.list-social a{
+    flex: auto;
+    color: #111111;
+    font-size: 14px;
+}
+.search-form{
+    padding: 10px 20px 0 0;
+}
+.input-search{
+    font-family: IRANSans;
+    display: inline-block;
+    width: 80%;
+    font-size: 18px;
+    text-align: center;
+    border: 0;
+}
+.input-search:focus{
+    outline: 1px solid rgba(255,255,255,1);
+}
+.searchBtn{
+    font-size: 15px;
+    border: 0;
+    background-color: white;
+    color: #cccaca;
+}
+
+
+.btnNav {
+    position: fixed;
+    right: 30px;
+    top: 30px;
+    background-color:transparent;
+    border: none;
+    /*z-index: 2;*/
+    cursor: pointer;
+}
+
+#topmenu a {
+    color: #464646;
+    display: block;
+    padding:  1px 8px;
+    transition: 0.3s;
+}
+#topmenu a:hover {
+    color: #a0a0a0;
+}
+.logo{
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+.articles{
+    padding-top: 30px;
+}
+
+.card {
+    display: block;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+    height: 440px;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.footCard {
+    position: relative;
+    padding: 2px 16px;
+}
+.badge{
+    position: absolute;
+    font-size: 14px;
+    left: 5px;
+    background-color: lawngreen;
+    border-radius: 10%;
+    padding: 6px;
+}
+
+.titr{
+    padding-top: 45px;
+}
+
+.favorite{
+    font-size: 14px;
+    position: absolute;
+    left: 5px;
+    color: #333333;
+}
+.avatar{
+    display: block;
+    width: 40px;
+    margin-top: 30px;
+}
+.author{
+    position: relative;
+}
+.name{
+    display: block;
+    position: absolute;
+    font-size: 13px;
+    color: #111111;
+    top: 40px;
+    right: 60px;
+}
+
+
+
+@media screen and (min-width: 460px) {
+    .social{
+        display: none;
+    }
+    .search-form{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 460px) {
+
+}
+@media screen and (max-width: 960px) {
+    .menuList{
+        position: relative;
+        top: 50px;
+    }
+    .logo {
+        display: block;
+        left: 10px;
+        position: absolute;
+        width: auto;
+    }
+    #topmenu {
+        position: fixed;
+        width: 100%;
+        font-family:IRANSans;
+    }
+    #mySidebar {
+        position: absolute;
+        width: 0;
+        height: 100vh;
+        right: -300px;
+        top: 100%;
+        font-size: 16px;
+        font-weight: 400;
+        display: initial;
+        background-color: rgba(163, 170, 163, 0.66);
+        line-height: 250%;
+        transition: 2s;
+    }
+
+    .card{
+        height: 530px;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .search-form{
+        display: initial;
+    }
+    .social{
+        display: initial;
+    }
+    .container {
+        max-width: 970px;
+    }
+
+    .btnNav{
+        display: none;
+    }
+
+    #mySidebar {
+        position: static;
+    }
+
+    .menuList {
+        display: flex;
+        flex-wrap: wrap;
+        position: static;
+        border: none;
+    }
+
+}
+
+
+@media screen and (min-width: 1200px){
+    .container {
+        max-width: 1170px;
+    }
+}
